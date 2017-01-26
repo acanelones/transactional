@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<head>
+</head>
+<body>
+    <style>
+
+        #header_title {
+            padding-bottom: 10px;
+        }
+
+        #headerlogo {
+            width: 370px;
+            display: inline-block;
+        }
+
+        #container {
+            width: 650px;
+            display: block;
+            margin: 0 auto;
+            border: solid 1px #f2f2f2;
+            padding: 20px;
+            box-sizing: border-box;
+            font-family: Lato, Calibri, sans-serif;
+        }
+
+        #lang {
+            float: right;
+            font-size: 14px;
+        }
+
+        #header {
+            margin-bottom: 20px;
+        }
+
+        #header_container {
+            background: url(http://i.imgur.com/Ca41BBX.jpg);
+            background-size: 100% 100%;
+            background-color: #0060a9;
+            background-repeat: no-repeat;
+        }
+
+        #header_container h1 {
+            color: white;
+            font-weight: 500;
+            font-size: 40px;
+            margin-bottom: 0;
+        }
+
+        #header_container p {
+            color: white;
+            font-size: 15px;
+            margin-top: 7px;
+            font-weight: 300;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            padding: 10px 15px;
+            background-color: #0e4a81;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #FFF;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        img.button_icon {
+            vertical-align: middle;
+            margin-right: 7px;
+            max-width: 13px;
+            margin-bottom: 2px;
+        }
+        
+        .notice {
+            width: 100%;
+            background-color: #efefef;
+            padding: 8px 10px;
+        }
+
+        .notice p {
+            margin: 0;
+            line-height: 20px;
+            font-size: 13px;
+            font-weight: 700;
+            color: #666;
+        }
+
+        .notice img {
+            width: 15px;
+            padding-right: 10px;
+        }
+
+        .warning {
+            width: 100%;
+            background-color: #efefef;
+            padding: 8px 10px;
+            margin: 10px 0;
+        }
+
+        .warning img {
+            width: 40px;
+            padding-right: 15px;
+        }
+
+        .warning h1 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 0;
+            color: #666;
+        }
+                
+        .warning p {
+            margin: 0;
+            line-height: 20px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #666;
+        }
+
+        .multi_item_table {
+            width: 100%;
+        }
+
+        .multi_item_table thead th {
+            text-align: left;
+            font-size: 15px;
+            color: #0e4a81;
+            padding-bottom: 10px;
+        }
+
+        .multi_item_table tbody td {
+            font-size: 13px;
+        }
+
+    </style>
+    <div id="container">
+        <div id="header_title">
+            <img src="https://raw.githubusercontent.com/copaair/transactional/master/images/logos/headerlogo.png" id="headerlogo" width="400" />
+            <div id="lang">
+                <a href="#">EN</a>
+                /
+                <a href="#">PT</a>
+            </div>
+        </div>
+        <table id="header" cellpadding="0" cellspacing="0" border="0" height="330" width="100%">
+            <tr>
+                <td id="header_container" background="http://i.imgur.com/tnKCLKR.jpg" bgcolor="#0060a9" width="650" height="300" valign="middle">
+                    <!--[if gte mso 9]>
+                    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:650px;height:300px;">
+                        <v:fill type="frame" src="http://i.imgur.com/tnKCLKR.jpg" color="#0060a9" />
+                        <v:textbox inset="0,0,0,0">
+                    <![endif]-->
+                    <table cellpadding="20" width="100%">
+                        <tr>
+                            <td valign="middle" height="300">
+                                <h1>Banner with Text Overlay</h1>
+                                <p width="300px">Save time at the airport by doing your Web Check-In.</p>
+                                <a class="button" href="#">
+                                    <img src="http://i.imgur.com/SIMAfxS.png" width="15" class="button_icon"/>
+                                    Button with icon →
+                                </a>
+                            </td>
+                        </tr>                           
+                    </table>
+                    <!--[if gte mso 9]>
+                        </v:textbox>
+                    </v:rect>
+                    <![endif]-->
+                </td>
+            </tr>
+        </table>
+        <table class="notice">
+            <tr>
+                <td><img src="images/info_blue.png" class="icon"></td>
+                <td><p>Remember to pay within 48 hours or your reservation will be automatically cancelled. 
+Please include the Unique Reference Number in the transfer to avoid any delays in payment.</p></td>
+            </tr>
+        </table>
+        <table class="warning">
+            <tr>
+                <td><img src="images/warning.png" class="icon"></td>
+                <td>
+                    <h1>Notificación importante sobre el dispositivo Samsung Galaxy Note 7</h1>
+                    <p>La Administración Federal de Aviación de Los Estados Unidos de América (FFA) prohibe el transporte 
+de estos dispositivos a bordo de nuestros aviones. <a href="#">Conózca más →</a></p>
+                </td>
+            </tr>
+        </table>
+        <table id="passenger_details" class="multi_item_table">
+            <thead>
+                <tr>
+                    <th >Nombre</th>
+                    <th>N de Viajero Frecuente</th>
+                    <th>Status Star Alliance</th>
+                    <th>N de Boleto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="passenger_row">
+                    <td id="passenger_name_0">{passenger_name}</td>
+                    <td id="ff_number_0">{ff_number}</td>
+                    <td id="SA_status_0">{SA_status}</td>
+                    <td id="ticket_no_0">{ticket_no}</td>
+                </tr>
+                <tr class="passenger_row">
+                    <td id="passenger_name_1">{passenger_name}</td>
+                    <td id="ff_number_1">{ff_number}</td>
+                    <td id="SA_status_1">{SA_status}</td>
+                    <td id="ticket_no_1">{ticket_no}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
